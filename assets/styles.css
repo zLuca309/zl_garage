@@ -1,0 +1,286 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Halvar Breitschrift';
+    font-style: normal;
+    font-weight: 400;
+}
+
+main {
+    position: fixed;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    top: 0vw;
+    left: 0vw;
+}
+
+main .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.83vw;
+    width: 48.698vw;
+    height: 35.052vw; 
+    background-color: #010403;
+}
+
+main .container .header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+main .container .header h1 {
+    -webkit-text-stroke: 0.052vw solid #000;
+    font-family: BigNoodleTitling;
+    font-size: 3.125vw;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%;
+    background: radial-gradient(89.1% 88.37% at 50% 50%, #B185CD 0%, rgba(98, 60, 122, 0.30) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main .container .header .actions {
+    display: flex;
+    align-items: center;
+    gap: 0.442vw;
+}
+
+main .container .header .actions .action-button {
+    display: flex;
+    width: 7.813vw;
+    height: 2.604vw;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(113.26% 113.26% at 50% 50%, rgba(177, 133, 205, 0.10) 0%, rgba(177, 133, 205, 0.00) 100%);
+}
+
+main .container .header .actions .action-button-fav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.604vw;
+    height: 2.604vw;
+    background: radial-gradient(113.26% 113.26% at 50% 50%, rgba(177, 133, 205, 0.10) 0%, rgba(177, 133, 205, 0.00) 100%);
+}
+
+main .container .header .actions .action-button-fav p {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 0.625vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+main .container .header .actions .action-button:hover,
+main .container .header .actions .action-button-fav:hover {
+    cursor: pointer;
+    border: 0.026vw solid #B185CD;
+    background: radial-gradient(113.26% 113.26% at 50% 50%, rgba(177, 133, 205, 0.86) 0%, rgba(177, 133, 205, 0.00) 100%);
+    transition: all 0.3s ease-in-out;
+}
+
+main .container .header .actions .action-button input {
+    width: 5.208vw;
+    background: none;
+    text-align: center;
+    outline: none;
+    border: none;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 0.625vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+main .container .header .actions .action-button input::placeholder {
+    color: #fff;
+}
+
+main .container .header .actions .action-button p {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 0.625vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+main .container .cars {
+    display: flex;
+    height: 24.267vw;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    gap: 1.142vw;
+}
+
+main .container .cars::-webkit-scrollbar {
+    display: none;
+}
+
+main .container .cars::-webkit-scrollbar-track {
+    background: radial-gradient(113.26% 113.26% at 50% 50%, rgba(177, 133, 205, 0.10) 0%, rgba(177, 133, 205, 0.00) 100%);
+}
+
+main .container .cars::-webkit-scrollbar-thumb {
+    background: #9E9E9E;
+}
+
+main .container .cars::-webkit-scrollbar-thumb:hover {
+    background: #7c7c7c;
+}
+
+main .container .cars-box {
+    display: flex;
+    flex-direction: column;
+    padding: 0.781vw;
+    width: 9.896vw;
+    height: 11.667vw;
+    background: radial-gradient(113.26% 113.26% at 50% 50%, rgba(177, 133, 205, 0.10) 0%, rgba(177, 133, 205, 0.00) 100%);
+    transition: box-shadow 0.25s ease;
+}
+
+main .container .cars-box.active-border {
+    box-shadow: 0 0 0 0.052vw #B185CD;
+}
+
+main .container .cars-box .data {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .container .cars-box .data .car-name .name p {
+    color: #9E9E9E;
+    font-family: Poppins;
+    font-size: 0.833vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+main .container .cars-box .data .car-name .nickname p {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 0.729vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+main .container .cars-box .data .buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.331vw;
+}
+
+main .container .cars-box .data .buttons .edit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.25vw;
+    height: 1.25vw;
+    padding: 0.26vw;
+    background: #B185CD;
+    box-shadow: -0.156vw 0.208vw 0.573vw 0 rgba(177, 133, 205, 0.50) inset, -0.469vw 0.677vw 1.198vw 0 rgba(177, 133, 205, 0.15);
+    filter: drop-shadow(-0.469vw 0.677vw 1.198vw rgba(219, 163, 255, 0.15));
+}
+
+main .container .cars-box .data .buttons .edit img {
+    pointer-events: none;
+    object-fit: contain;
+    width: 0.729vw;
+    height: 0.729vw;
+}
+
+main .container .cars-box .data .buttons .fav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.25vw;
+    height: 1.25vw;
+    padding: 0.26vw;
+    background: #B185CD;
+    box-shadow: -0.156vw 0.208vw 0.573vw 0 rgba(177, 133, 205, 0.50) inset, -0.469vw 0.677vw 1.198vw 0 rgba(177, 133, 205, 0.15);
+    filter: drop-shadow(-0.469vw 0.677vw 1.198vw rgba(219, 163, 255, 0.15));
+}
+
+main .container .cars-box .data .buttons .fav img {
+    pointer-events: none;
+    object-fit: contain;
+    width: 0.625vw;
+    height: 0.625vw;
+}
+
+main .container .cars-box .car-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.083vw;
+}
+
+main .container .cars-box .car-img img {
+    width: 8.333vw;
+    height: 2.76vw;
+}
+
+main .container .cars-box .fuel {
+    display: flex;
+    align-items: center;
+    gap: 0.208vw;
+}
+
+main .container .cars-box .fuel .icon {
+    display: flex;
+}
+
+main .container .cars-box .fuel .icon img {
+    width: 0.781vw;
+    height: 0.781vw;
+    pointer-events: none;
+}
+
+main .container .cars-box .fuel .fuel-status {
+    display: flex;
+    flex: 1 1 auto;
+    aspect-ratio: 0.781 / 1.25;
+    width: 0.781vw;
+    height: 1.25vw; 
+    border: 0.026vw solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: -9px 13px 23px 0 rgba(255, 255, 255, 0.15);
+}
+
+main .container .cars-box .fuel .fuel-status-active {
+    display: flex;
+    flex: 1 1 auto;
+    aspect-ratio: 0.781 / 1.25;
+    width: 0.781vw;
+    height: 1.25vw; 
+    border: 0.5px solid #b185cda6;
+    background: rgba(177, 133, 205, 0.242);
+    box-shadow: -9px 13px 23px 0 rgba(177, 133, 205, 0.15);
+}
